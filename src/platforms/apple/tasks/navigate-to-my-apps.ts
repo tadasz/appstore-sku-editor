@@ -12,12 +12,11 @@ const navigateToMyApps = async (page: Page) => {
   });
 
   // Click on `Surge Gay App s.r.o.` organization
-  await page.waitForSelector('li[title="Surge Gay App s.r.o."]');
+  await page.waitForSelector('li[title="Dogo App UG (haftungsbeschrankt)"]');
   await page.evaluate(() => {
     const organization = document.querySelector<HTMLElement>(
-      'li[title="Surge Gay App s.r.o."]'
+      'li[title="Dogo App UG (haftungsbeschrankt)"]'
     );
-
     organization?.click();
   });
 

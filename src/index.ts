@@ -16,6 +16,7 @@ const main = async (flags: Flags) => {
   const platform = flags.platform as Platform;
 
   const browser = await puppeteer.launch({
+    args: ['--disable-features=site-per-process'],
     headless: false,
   });
 
